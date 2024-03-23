@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Sorozatok</title>
+  <!-- Link a Tailwind CSS-hez -->
+ <!--  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-100 p-4">
+  <h1 class="text-4xl font-bold text-center mb-4 text-amber-800">Sorozatok</h1>
+  <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <!-- Kártyák kezdete -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img src="https://variety.com/wp-content/uploads/2022/08/StrangerThings_StrangerThings4_9_02_14_28_08.jpg?w=681&h=383&crop=1" alt="Netflix Sorozat" class="w-full h-40 object-cover">
+      <div class="p-4 line-clamp-2">
+        <h2 class="text-xl font-semibold text-amber-800 mb-2">Stranger Things</h2>
+        <p class="text-amber-700 line-clamp-2">Egy kisvárosban eltűnik egy kisfiú, és miközben a barátai, a családja és a helyi rendőrség nyomoz, egy titokzatos lány érkezik, aki különleges képességekkel rendelkezik.</p>
+      </div>
+    </div>
+
+    <div class="card bg-white rounded-lg shadow-lg overflow-hidden">
+      <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUAioxWLTjxlu0S26gYNm4oDYcbDbYj9PdgRNmPknAn2X6iFLh55btyMsTzvAAk_ht32WfeAq_WYnvbpsErzwF7VQhTRxukbzhHF.jpg?r=ae3" alt="Netflix Sorozat" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h2 class="text-xl font-semibold text-amber-800 mb-2">The Crown</h2>
+        <p class="text-amber-700 line-clamp-2">A brit királyi család története II. Erzsébet uralkodásának kezdetétől napjainkig.</p>
+      </div>
+    </div>
+
+    <div class="card bg-white rounded-lg shadow-lg overflow-hidden">
+      <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2021/08/moneyheist5-1627916834.jpg" alt="Netflix Sorozat" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h2 class="text-xl font-semibold text-amber-800 mb-2">Money Heist</h2>
+        <p class="text-amber-700 line-clamp-2">Egy rejtélyes alak, aki csak „Professzornak” nevezik, megtervezi a legnagyobb bankrablást a spanyol történelemben.</p>
+      </div>
+    </div>
+    <!-- Kártyák folytatása -->
+<div class="card bg-white rounded-lg shadow-lg overflow-hidden">
+    <img src="https://goinswriter.com/wp-content/uploads/2013/10/breaking-bad.png" alt="Netflix Sorozat" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <h2 class="text-xl font-semibold text-amber-800 mb-2">Breaking Bad</h2>
+      <p class="text-amber-700 line-clamp-2">Egy középkorú középiskolai kémia tanár rákot diagnosztizáltan magán, és úgy dönt, hogy a drogkereskedelembe fog belekeveredni, hogy anyagi biztonságot teremtsen családjának a betegségére való tekintettel.</p>
+    </div>
+  </div>
+  
+  <div class="card bg-white rounded-lg shadow-lg overflow-hidden">
+    <img src="https://images.hindustantimes.com/img/2022/05/16/1600x900/bm_1652705745405_1652705756503.png" alt="Netflix Sorozat" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <h2 class="text-xl font-semibold text-amber-800 mb-2">Black Mirror</h2>
+      <p class="text-amber-700 line-clamp-2">Különböző, gyakran elszigetelt történetek az emberiség modern technológiával és társadalmi tendenciáival kapcsolatos fiktív, sötét, gyakran kritikai áttekintésekkel.</p>
+    </div>
+  </div>
+  
+  <div class="card bg-white rounded-lg shadow-lg overflow-hidden">
+    <img src="https://media.glamourmagazine.co.uk/photos/649d58a9c6842515c5b5ac4f/16:9/w_1920,h_1080,c_limit/THE%20WITCHER%20290623%20default-%20The_Witcher_n_S3_E4_00_28_49_08.jpg" alt="Netflix Sorozat" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <h2 class="text-xl font-semibold text-amber-800 mb-2">The Witcher</h2>
+      <p class="text-amber-700 line-clamp-2">Egy mutáns vadász, egy megözvegyült boszorkány és egy titokzatos kislány egyesítik erejüket, hogy megküzdjenek a könyörtelen világgal, amelyben élnek.</p>
+    </div>
+  </div>
+  
+  </div>
+  <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center invisible">
+    <div class="bg-white p-6 rounded-lg max-w-md">
+      <h2 class="text-xl font-semibold mb-2" id="modalTitle">Stranger Things</h2>
+      <img src="https://variety.com/wp-content/uploads/2022/08/StrangerThings_StrangerThings4_9_02_14_28_08.jpg?w=681&h=383&crop=1" alt="Netflix Sorozat" class="w-full h-40 object-cover mb-4">
+      <p id="modalContent" class="text-amber-700">Egy kisvárosban eltűnik egy kisfiú, és miközben a barátai, a családja és a helyi rendőrség nyomoz, egy titokzatos lány érkezik, aki különleges képességekkel rendelkezik.</p>
+      <p id="imdbRating" class="text-amber-700">IMDb értékelés: 8.7</p>
+      <p id="seasons" class="text-amber-700">Évadok száma: 4</p>
+      <button id="closeModal" class="mt-4 bg-amber-700 text-white py-2 px-4 rounded hover:bg-amber-600">Bezárás</button>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const cards = document.querySelectorAll('.card');
+      const modal = document.getElementById('modal');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalContent = document.getElementById('modalContent');
+      const closeModalButton = document.getElementById('closeModal');
+      cards.forEach(card => {
+        card.addEventListener('click', function() {
+          modalTitle.textContent = card.querySelector('h2').textContent;
+          modalContent.textContent = card.querySelector('p').textContent;
+          modal.classList.remove('invisible');
+        });
+      });
+      closeModalButton.addEventListener('click', function() {
+        modal.classList.add('invisible');
+      });
+    });
+  </script>
+</body>
+</html>
