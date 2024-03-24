@@ -27,12 +27,15 @@ function App() {
     <>
       <div className="text-right text-amber-800 text-4xl" style={theme !== null ? {color: theme.text} : {}}>
         <select className='select max-w-xs bg-amber-100' style={theme !== null ? {background: theme.bg} : {}} value={ theme !== null ? theme.name : "amber"} onChange={(e) => handleThemeChange(e.target.value)}>
-          <option value="amber">amber</option>
-          <option value="lime">lime</option>
+        <option value="amber">amber</option>
+          {Object.keys(themes).map( e => 
+            <option value={`${e}`}>{e}</option> )}
+          {/* <option value="amber">amber</option> */}
+          {/* <option value="lime">lime</option>
           <option value="zinc">zinc</option>
           <option value="digby">digby</option>
           <option value="rose gold">rose gold</option>
-          <option value="talon">talon</option>
+          <option value="talon">talon</option> */}
         </select>
       </div>
       <h1 className="text-4xl font-bold text-center mb-4 text-amber-800" style={theme !== null ? {color: theme.text} : {}}>Sorozatok</h1>
