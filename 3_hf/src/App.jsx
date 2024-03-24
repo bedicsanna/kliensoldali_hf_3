@@ -30,12 +30,6 @@ function App() {
         <option value="amber">amber</option>
           {Object.keys(themes).map( e => 
             <option value={`${e}`}>{e}</option> )}
-          {/* <option value="amber">amber</option> */}
-          {/* <option value="lime">lime</option>
-          <option value="zinc">zinc</option>
-          <option value="digby">digby</option>
-          <option value="rose gold">rose gold</option>
-          <option value="talon">talon</option> */}
         </select>
       </div>
       <h1 className="text-4xl font-bold text-center mb-4 text-amber-800" style={theme !== null ? {color: theme.text} : {}}>Sorozatok</h1>
